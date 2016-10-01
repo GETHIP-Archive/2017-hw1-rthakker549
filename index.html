@@ -3,21 +3,23 @@
   <head>
     <title>GET HIP Week One Challenge</title>
     <link rel="stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1>GET HIP Week One Assignment</h1>
+    <h1 id=main_title>GET HIP Week One Assignment</h1>
     <div class="well row">
       <h2>Problem 1:</h2>
       <p>For your computer science class at school, you take 6 tests. Your teacher takes the average of your top 5 test scores, and that is your test score for the semester. Since your teacher has so many students, it takes a while for them to enter your test grades. You and your friends want to know what your test grade is before your report card comes out. Your job is to implement the javascript method "problemOne()" for you and your friends to use to find your test grade.</p>
       <p>Enter each of your 6 test grades in the number inputs below, and click "Find Your Test Grade" to run problemOne() and print your test grade to the console.</p>
       <form>
-        <div class="row">
-          <div class="col-md-2"><input type="number" id="num1" class="form-control"></div>
-          <div class="col-md-2"><input type="number" id="num2" class="form-control"></div>
-          <div class="col-md-2"><input type="number" id="num3" class="form-control"></div>
-          <div class="col-md-2"><input type="number" id="num4" class="form-control"></div>
-          <div class="col-md-2"><input type="number" id="num5" class="form-control"></div>
-          <div class="col-md-2"><input type="number" id="num6" class="form-control"></div>
+        <div class="row tests">
+          <div class="col-md-2"><input type="number" id="num1" class="form-control" placeholder="Score"></div>
+          <div class="col-md-2"><input type="number" id="num2" class="form-control" placeholder="Score"></div>
+          <div class="col-md-2"><input type="number" id="num3" class="form-control" placeholder="Score"></div>
+          <div class="col-md-2"><input type="number" id="num4" class="form-control" placeholder="Score"></div>
+          <div class="col-md-2"><input type="number" id="num5" class="form-control" placeholder="Score"></div>
+          <div class="col-md-2"><input type="number" id="num6" class="form-control" placeholder="Score"></div>
         </div>
         <button onclick="problemOne(); return false;" class="btn btn-default">Find Your Test Grade</button>
       </form>
@@ -61,13 +63,13 @@
       </table>
       <p>Enter each of your 6 letter grades in the input boxes below, and click "Find Your GPA" to run problemTwo() and print your GPA to the console.</p>
       <form>
-        <div class="row">
-          <div class="col-md-2"><input type="text" id="grade1" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade2" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade3" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade4" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade5" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade6" class="form-control"></div>
+        <div class="row gpa">
+          <div class="col-md-2"><input type="text" id="grade1" placeholder="Grade" class="form-control"></div>
+          <div class="col-md-2"><input type="text" id="grade2" class="form-control" placeholder="Grade"></div>
+          <div class="col-md-2"><input type="text" id="grade3" class="form-control" placeholder="Grade"></div>
+          <div class="col-md-2"><input type="text" id="grade4" class="form-control" placeholder="Grade"></div>
+          <div class="col-md-2"><input type="text" id="grade5" class="form-control" placeholder="Grade"></div>
+          <div class="col-md-2"><input type="text" id="grade6" class="form-control" placeholder="Grade"></div>
         </div>
         <button onclick="problemTwo(); return false;" class="btn btn-default">Find Your GPA</button>
       </form>
